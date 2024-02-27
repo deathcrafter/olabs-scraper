@@ -55,6 +55,7 @@ def main():
         )
         print("Getting simulator.")
         save_simulator(
+            driver,
             experiment["simulator"],
             Path(os.path.join(C9_PATH, slugify(experiment["title"]), "simulator")),
         )
@@ -83,6 +84,7 @@ def main():
             ),
         )
         save_simulator(
+            driver,
             experiment["simulator"],
             Path(os.path.join(C10_PATH, slugify(experiment["title"]), "simulator")),
         )
